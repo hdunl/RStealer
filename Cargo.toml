@@ -1,0 +1,18 @@
+[package]
+name = "blah"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+env_logger = "0.9"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["blocking"] }
+rusqlite = { version = "0.26",features = ["bundled-windows"] }
+aes-gcm = "0.9"
+base64 = "0.13"
+winapi = { version = "0.3", features = ["wincrypt", "dpapi"] }
+whoami = "1.2"
